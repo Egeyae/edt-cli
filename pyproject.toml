@@ -1,0 +1,20 @@
+[project]
+name = "edt-cli"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+authors = [
+    { name = "Egeyae", email = "cossec.elouan.pro@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "icalendar>=7.3.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+edt-cli = "edt_cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
